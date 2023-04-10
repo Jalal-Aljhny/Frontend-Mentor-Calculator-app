@@ -1,0 +1,473 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: hsl(222, 26%, 31%); /*theme 1*/
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #e6e6e6; /*theme 2*/
+  }
+}
+body.theme-1 {
+  background-color: hsl(222, 26%, 31%); /*theme 1*/
+}
+body.theme-2 {
+  background-color: #e6e6e6; /*theme 2*/
+}
+body.theme-3 {
+  background-color: #17062a;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  min-width: 332.467px;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container h1 {
+  font-size: 28px;
+}
+@media (prefers-color-scheme: dark) {
+  header .container h1 {
+    color: #fffffe; /*theme 1*/
+  }
+}
+@media (prefers-color-scheme: light) {
+  header .container h1 {
+    color: #393931;
+  }
+}
+body.theme-1 header .container h1 {
+  color: #fffffe; /*theme 1*/
+}
+body.theme-2 header .container h1 {
+  color: #393931;
+}
+body.theme-3 header .container h1 {
+  color: #fee643;
+}
+header .container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container > div h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+@media (prefers-color-scheme: dark) {
+  header .container > div h2 {
+    color: #fffffe; /*theme 1*/
+  }
+}
+@media (prefers-color-scheme: light) {
+  header .container > div h2 {
+    color: #393931;
+  }
+}
+body.theme-1 header .container > div h2 {
+  color: #fffffe; /*theme 1*/
+}
+body.theme-2 header .container > div h2 {
+  color: #393931;
+}
+body.theme-3 header .container > div h2 {
+  color: #fee643;
+}
+header .container > div div small {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 5px;
+}
+@media (prefers-color-scheme: dark) {
+  header .container > div div small {
+    color: #fffffe; /*theme 1*/
+  }
+}
+@media (prefers-color-scheme: light) {
+  header .container > div div small {
+    color: #393931;
+  }
+}
+body.theme-1 header .container > div div small {
+  color: #fffffe; /*theme 1*/
+}
+body.theme-2 header .container > div div small {
+  color: #393931;
+}
+body.theme-3 header .container > div div small {
+  color: #fee643;
+}
+header .container > div div div {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+}
+@media (prefers-color-scheme: dark) {
+  header .container > div div div {
+    background-color: #252d44; /*theme 1*/
+    justify-content: flex-start;
+  }
+}
+@media (prefers-color-scheme: light) {
+  header .container > div div div {
+    background-color: #d3cdcd;
+    justify-content: center;
+  }
+}
+body.theme-1 header .container > div div div {
+  background-color: #252d44; /*theme 1*/
+  justify-content: flex-start;
+}
+body.theme-2 header .container > div div div {
+  background-color: #d3cdcd;
+  justify-content: center;
+}
+body.theme-3 header .container > div div div {
+  background-color: #1e0736;
+  justify-content: flex-end;
+}
+header .container > div div div span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+@media (prefers-color-scheme: dark) {
+  header .container > div div div span {
+    background-color: hsl(6, 63%, 50%); /*theme 1*/
+  }
+  header .container > div div div span:hover {
+    background-color: #f86d58;
+  }
+}
+@media (prefers-color-scheme: light) {
+  header .container > div div div span {
+    background-color: #cc5406;
+  }
+  header .container > div div div span:hover {
+    background-color: #f78e3d;
+  }
+}
+body.theme-1 header .container > div div div span {
+  background-color: hsl(6, 63%, 50%); /*theme 1*/
+}
+body.theme-1 header .container > div div div span:hover {
+  background-color: #f86d58;
+}
+body.theme-2 header .container > div div div span {
+  background-color: #cc5406;
+}
+body.theme-2 header .container > div div div span:hover {
+  background-color: #f78e3d;
+}
+body.theme-3 header .container > div div div span {
+  background-color: #01d7cf;
+}
+body.theme-3 header .container > div div div span:hover {
+  background-color: #8efaf6;
+}
+main section.result .result {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 25px;
+  width: 100%;
+  min-height: 90px;
+  border-radius: 10px;
+  direction: rtl;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-wrap: anywhere;
+}
+@media (prefers-color-scheme: dark) {
+  main section.result .result {
+    background-color: #181f32;
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: light) {
+  main section.result .result {
+    background-color: #eeeeee;
+    color: #313129;
+  }
+}
+body.theme-1 main section.result .result {
+  background-color: #181f32;
+  color: #fff;
+}
+body.theme-2 main section.result .result {
+  background-color: #eeeeee;
+  color: #313129;
+}
+body.theme-3 main section.result .result {
+  background-color: #1e0736;
+  color: #fee643;
+}
+section.keys .container div {
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  section.keys .container div {
+    background-color: #252d44;
+  }
+}
+@media (prefers-color-scheme: light) {
+  section.keys .container div {
+    background-color: #d3cdcd;
+  }
+}
+body.theme-1 section.keys .container div {
+  background-color: #252d44;
+}
+body.theme-2 section.keys .container div {
+  background-color: #d3cdcd;
+}
+body.theme-3 section.keys .container div {
+  background-color: #1e0736;
+}
+section.keys .container div button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+@media (prefers-color-scheme: dark) {
+  section.keys .container div button {
+    background-color: #eae3db;
+    color: #444b5a;
+    box-shadow: 0 3px 0 #afa79a;
+  }
+  section.keys .container div button:hover {
+    background-color: #ffffff;
+  }
+}
+@media (prefers-color-scheme: light) {
+  section.keys .container div button {
+    background-color: #e5e4e0;
+    color: #22221a;
+    box-shadow: 0 3px 0 #a89f98;
+  }
+  section.keys .container div button:hover {
+    background-color: #ffffff;
+  }
+}
+body.theme-1 section.keys .container div button {
+  background-color: #eae3db;
+  color: #444b5a;
+  box-shadow: 0 3px 0 #afa79a;
+}
+body.theme-1 section.keys .container div button:hover {
+  background-color: #ffffff;
+}
+body.theme-2 section.keys .container div button {
+  background-color: #e5e4e0;
+  color: #22221a;
+  box-shadow: 0 3px 0 #a89f98;
+}
+body.theme-2 section.keys .container div button:hover {
+  background-color: #ffffff;
+}
+body.theme-3 section.keys .container div button {
+  background-color: #331b4d;
+  color: #fee643;
+  box-shadow: 0 3px 0 #7b3396;
+}
+body.theme-3 section.keys .container div button:hover {
+  background-color: #6b34ac;
+}
+section.keys .container div button:nth-child(17),
+section.keys .container div button:last-child {
+  grid-column: span 2;
+}
+section.keys .container div button[data-key="del"],
+section.keys .container div button[data-key="reset"] {
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+}
+@media (prefers-color-scheme: dark) {
+  section.keys .container div button[data-key="del"],
+  section.keys .container div button[data-key="reset"] {
+    background-color: #647299;
+    box-shadow: 0 3px 0 #414e70;
+    color: #fefffd;
+  }
+  section.keys .container div button[data-key="del"]:hover,
+  section.keys .container div button[data-key="reset"]:hover {
+    background-color: #a2b3e1;
+  }
+}
+@media (prefers-color-scheme: light) {
+  section.keys .container div button[data-key="del"],
+  section.keys .container div button[data-key="reset"] {
+    background-color: #388187;
+    box-shadow: 0 3px 0 #1d5c65;
+    color: #e8fcfb;
+  }
+  section.keys .container div button[data-key="del"]:hover,
+  section.keys .container div button[data-key="reset"]:hover {
+    background-color: #62b5bd;
+  }
+}
+body.theme-1 section.keys .container div button[data-key="del"],
+body.theme-1 section.keys .container div button[data-key="reset"] {
+  background-color: #647299;
+  box-shadow: 0 3px 0 #414e70;
+  color: #fefffd;
+}
+body.theme-1 section.keys .container div button[data-key="del"]:hover,
+body.theme-1 section.keys .container div button[data-key="reset"]:hover {
+  background-color: #a2b3e1;
+}
+body.theme-2 section.keys .container div button[data-key="del"],
+body.theme-2 section.keys .container div button[data-key="reset"] {
+  background-color: #388187;
+  box-shadow: 0 3px 0 #1d5c65;
+  color: #e8fcfb;
+}
+body.theme-2 section.keys .container div button[data-key="del"]:hover,
+body.theme-2 section.keys .container div button[data-key="reset"]:hover {
+  background-color: #62b5bd;
+}
+body.theme-3 section.keys .container div button[data-key="del"],
+body.theme-3 section.keys .container div button[data-key="reset"] {
+  color: #fff8ff;
+  background-color: #56077c;
+  box-shadow: 0 3px 0 #bc16f2;
+}
+body.theme-3 section.keys .container div button[data-key="del"]:hover,
+body.theme-3 section.keys .container div button[data-key="reset"]:hover {
+  background-color: #8631b0;
+}
+section.keys .container div button:last-child {
+  transition-duration: 0.3s;
+}
+@media (prefers-color-scheme: dark) {
+  section.keys .container div button:last-child {
+    background-color: #d13f30;
+    color: #fefffd;
+    box-shadow: 0 3px 0 #8f2316;
+  }
+  section.keys .container div button:last-child:hover {
+    background-color: #f96c5b;
+  }
+}
+@media (prefers-color-scheme: light) {
+  section.keys .container div button:last-child {
+    background-color: #c85401;
+    color: #fffadd;
+    box-shadow: 0 3px 0 #863700;
+  }
+  section.keys .container div button:last-child:hover {
+    background-color: #ff8b38;
+  }
+}
+body.theme-1 section.keys .container div button:last-child {
+  background-color: #d13f30;
+  color: #fefffd;
+  box-shadow: 0 3px 0 #8f2316;
+}
+body.theme-1 section.keys .container div button:last-child:hover {
+  background-color: #f96c5b;
+}
+body.theme-2 section.keys .container div button:last-child {
+  background-color: #c85401;
+  color: #fffadd;
+  box-shadow: 0 3px 0 #863700;
+}
+body.theme-2 section.keys .container div button:last-child:hover {
+  background-color: #ff8b38;
+}
+body.theme-3 section.keys .container div button:last-child {
+  background-color: #00decf;
+  color: #002d2f;
+  box-shadow: 0 3px 0 #6ef7ef;
+}
+body.theme-3 section.keys .container div button:last-child:hover {
+  background-color: #94fff9;
+}
+section .error {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  background-color: #c51244;
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  transform: translateX(-50%) scale(0);
+  opacity: 0;
+}
+footer {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body.theme-1 footer {
+  color: #eee;
+}
+body.theme-2 footer {
+  color: #111;
+}
+body.theme-3 footer {
+  color: #eee;
+}
+body.theme-1 footer a {
+  color: #d13f30;
+}
+body.theme-2 footer a {
+  color: #c85401;
+}
+body.theme-3 footer a {
+  color: #00decf;
+}
+footer div {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  font-size: 12px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Calculator with main operator" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>calc</h1>
+        <div>
+          <h2>theme</h2>
+          <div>
+            <small>1</small>
+            <small>2</small>
+            <small>3</small>
+            <div><span draggable="true"></span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="result">
+        <div class="container">
+          <div class="result"></div>
+        </div>
+      </section>
+      <section class="keys">
+        <div class="container">
+          <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button data-key="del">Del</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button data-key="add">+</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button data-key="minus">-</button>
+            <button>.</button>
+            <button>0</button>
+            <button data-key="divide">/</button>
+            <button data-key="multi">x</button>
+            <button data-key="reset">Reset</button>
+            <button data-key="equal">=</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="error">Operation you did is not valid</div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Jalal-Aljhny">Jalal ALjhny</a>.
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
